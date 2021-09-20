@@ -22,6 +22,10 @@ font-family: 'Lato', sans-serif;
     color: var(--c6);
 }
 
+html {
+    height: 100%;
+}
+
 /*_____ TYPOGRAPHY _____*/
 
 h1 {
@@ -39,6 +43,7 @@ footer {
     background-color: var(--c5);
     padding: 2rem;
     text-align: center;
+    margin-top: auto;
 }
 
 footer > p {
@@ -116,6 +121,13 @@ footer > p {
 
 
 /*_______ LAYOUT _______*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .container {
     width: 90%;
     margin: 2rem auto;
@@ -169,12 +181,5 @@ footer > p {
 
     .col-1 {
         width: 20%;
-    }
-
-    footer {
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
     }
 }
